@@ -12,6 +12,10 @@ public class ParttimeEmployee extends Employee {
         return result;
     }
 
+    public ParttimeEmployee(double workHour) {
+        this.workHour = workHour;
+    }
+
     public ParttimeEmployee() {
     }
 
@@ -31,6 +35,11 @@ public class ParttimeEmployee extends Employee {
     @Override
     public String toString() {
         return "ParttimeEmployee{" +
+                "EmployeeID:" + getEmployeeId()+
+                "Full Name: " + getFullName()+
+                "Age: " + getAge()+
+                "Phone number: "+ getPhoneNumber()+
+                "Email: "+ getEmail()+
                 "workHour=" + workHour +
                 '}';
     }
